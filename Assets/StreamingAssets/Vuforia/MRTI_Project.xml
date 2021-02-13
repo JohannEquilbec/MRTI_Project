@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARConfig>
+    <Tracking>
+        <ImageTarget name="cubePen.Left" size="8.000000 8.000000"/>
+        <ImageTarget name="cubePen.Back" size="8.000000 8.000000"/>
+        <ImageTarget name="cubePen.Front" size="8.000000 8.000000"/>
+        <ImageTarget name="cubePen.Bottom" size="8.000000 8.000000"/>
+        <ImageTarget name="cubePen.Right" size="8.000000 8.000000"/>
+        <ImageTarget name="cubePen.Top" size="8.000000 8.000000"/>
+        <MultiTarget name="cubePen">
+            <Part name="cubePen.Left" translation="-4.0 0 0" rotation="AD: 0 1 0 -90"/>
+            <Part name="cubePen.Right" translation="4.0 0 0" rotation="AD: 0 1 0 90"/>
+            <Part name="cubePen.Front" translation="0 0 4.0" rotation="AD: 1 0 0 0"/>
+            <Part name="cubePen.Back" translation="0 0 -4.0" rotation="AD: 0 1 0 180"/>
+            <Part name="cubePen.Top" translation="0 4.0 0" rotation="AD: 1 0 0 -90"/>
+            <Part name="cubePen.Bottom" translation="0 -4.0 0" rotation="AD: 1 0 0 90"/>
+        </MultiTarget>
+    </Tracking>
+</QCARConfig>

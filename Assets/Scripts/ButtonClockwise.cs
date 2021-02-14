@@ -18,7 +18,7 @@ public class ButtonClockwise : MonoBehaviour, IVirtualButtonEventHandler
 
     public void OnButtonPressed(VirtualButtonBehaviour vbh)
     {
-        animation.Play("Button");
+        animation.Play("cube");
         Debug.Log("The button is pressed");
     }
 

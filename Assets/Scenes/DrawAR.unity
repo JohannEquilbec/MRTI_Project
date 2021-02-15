@@ -2976,6 +2976,7 @@ MeshRenderer:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> parent of ad2e574 (Update DrawAR.unity)
@@ -3064,6 +3065,8 @@ PrefabInstance:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b201c6684ebcb6741baeea930fd1eda4, type: 3}
 >>>>>>> parent of ad2e574 (Update DrawAR.unity)
+=======
+>>>>>>> parent of c637635 (Update DrawAR.unity)
 --- !u!21 &1649997684
 Material:
   serializedVersion: 6

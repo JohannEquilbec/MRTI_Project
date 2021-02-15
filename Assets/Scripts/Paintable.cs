@@ -27,7 +27,7 @@ public class Paintable : MonoBehaviour
             if (Physics.Raycast(Ray, out hit))
             {
                 // Instanciate a brush
-                var go = Instantiate(Brush, hit.point + Vector3.up * 0.0015f, Quaternion.identity, transform); // Vector3.up * 0.1f
+                var go = Instantiate(Brush, hit.point + Vector3.up * 0.005f, Quaternion.identity, transform); // Vector3.up * 0.1f
                 go.transform.localScale = Vector3.one * BrushSize; 
             }
 

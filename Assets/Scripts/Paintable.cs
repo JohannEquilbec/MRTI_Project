@@ -7,7 +7,7 @@ public class Paintable : MonoBehaviour
 
     public GameObject Brush;
     public float BrushSize = 0.1f;
-    public RenderTexture RTexture;
+    public RenderTexture RenderTexture;
 
     // Use this for initialization
     void Start()
@@ -27,7 +27,7 @@ public class Paintable : MonoBehaviour
             if (Physics.Raycast(Ray, out hit))
             {
                 // Instanciate a brush
-                var go = Instantiate(Brush, hit.point + Vector3.up * 0.05f, Quaternion.identity, transform); // Vector3.up * 0.1f
+                var go = Instantiate(Brush, hit.point, Quaternion.identity, transform); // Vector3.up * 0.1f
                 go.transform.localScale = Vector3.one * BrushSize; 
             }
 
@@ -46,17 +46,15 @@ public class Paintable : MonoBehaviour
         Debug.Log(Application.dataPath + "/savedImage.png");
 
         // Set active texture
-        RenderTexture.active = RTexture;
+        RenderTexture.active = RenderTexture;
 
         // Convert rendering texture to texture2D
-        var texture2D = new Texture2D(RTexture.width, RTexture.height);
-        texture2D.ReadPixels(new Rect(0, 0, RTexture.width, RTexture.height), 0, 0);
+        var texture2D = new Texture2D(RenderTexture.width, RenderTexture.height);
+        texture2D.ReadPixels(new Rect(0, 0, RenderTexture.width, RenderTexture.height), 0, 0);
         texture2D.Apply();
 
         // Write data to file
         var data = texture2D.EncodeToPNG();
         File.WriteAllBytes(Application.dataPath + "/savedImage.png", data);
-
-
     }
 }

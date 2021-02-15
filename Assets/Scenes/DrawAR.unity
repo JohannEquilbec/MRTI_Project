@@ -462,7 +462,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   button: {fileID: 1024583336}
-  animation: {fileID: 374348909}
+  animation: {fileID: 0}
 --- !u!21 &117118107
 Material:
   serializedVersion: 6

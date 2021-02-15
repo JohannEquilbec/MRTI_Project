@@ -2592,7 +2592,10 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> parent of ad2e574 (Update DrawAR.unity)
 --- !u!1001 &1615339533
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -54,6 +54,7 @@ public class ColorPickerScript : MonoBehaviour
                 if (renderer != null)
                 {
                     renderer.sharedMaterial.SetColor("_Color", c);
+                    renderer.sharedMaterial.SetColor("_EmissionColor", c);
                 }
             }
         }
